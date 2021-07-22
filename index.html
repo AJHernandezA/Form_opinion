@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-content">
+        <header>
+            <h1 id="title">Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="Name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="Email" id="email-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="Age" id="number-label">Age</label>
+                <span> (optional)</span>
+                <input type="number" name="age" id="number" placeholder="Age" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role? </p>
+                <select name="role" id="dropdowm" name="role" class="form-control" required>
+                    <option disabled selected value>Select Current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="Preferno">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label><input name="user-recommed" value="definitely" class="input-radio" type="radio" checked> Definitely</label>
+                <label><input name="user-recommed" class="input-radio" value="maybe"type="radio" checked> Maybe</label>
+                <label><input name="user-recommed" class="input-radio" value="notsure"type="radio" checked> Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select name="feature" id="dropdowm" name="feature" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open-sources">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved?</p>
+                <span>(Check all that apply)</span>
+                <label>
+                    <input name="prefer" class="input-checkbox" value="Front-end-projects" type="checkbox" >
+                    Front-end Projects
+                </label>
+                <label>
+                    <input name="prefer" class="input-checkbox" value="Back-end-projects" type="checkbox" >
+                    Back-end Projects
+                </label>
+                <label>
+                    <input name="prefer" value="Data-visualization" class="input-checkbox" type="checkbox" >
+                    Data visualization
+                </label>
+                <label>
+                    <input name="prefer" class="input-checkbox" value="challenges" type="checkbox" >
+                    Challenges
+                </label>
+                <label>
+                    <input name="prefer" class="input-checkbox" value="open-sources-community" type="checkbox" >
+                    Open Source Community
+                </label>
+                <label>
+                    <input name="prefer" value="city-meetups" class="input-checkbox" type="checkbox" >
+                    City Meetups
+                </label>
+                <label>
+                    <input name="prefer" value="wiki" class="input-checkbox" type="checkbox" >
+                    Wiki
+                </label>
+                <label>
+                    <input name="prefer" value="forum" class="input-checkbox" type="checkbox" >
+                    Forum
+                </label>
+                <label>
+                    <input name="prefer" value="additional-Courses" class="input-checkbox" type="checkbox" >
+                    Additional Courses
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any additional sugestions?</p>
+                <textarea name="comment" id="comment" class="input-textarea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
